@@ -3,60 +3,146 @@
     padding: 0;
     box-sizing: border-box;
 }
-.one{
+.site-bar{
+    min-height: 100vh;
+    background-color: black;
+    position: fixed;
+    padding:20px ;
+}
+.site-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    padding: 20px 0px;
+    background-color: blueviolet ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 32px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar.logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 6px 12px;
+    color: white;
+}
+
+.menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.two{
     width: 100%;
     height: 500px;
-    background-color: white;
+    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
-h4{
-    color: red;
-}
 h1{
-    color: black;
-    margin-top: 20px;
+    color: white;
+    padding: 20px;
 }
 p{
-    margin-top: 20px;
+    color: white;
+    padding: 20px;
 }
-.shekil1{
-    display:flex;
+button.one{
+    width: 100px;
+    height: 40px;
+    color:black;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+button.one:hover{
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid white;
+}
+h2{
+    color: black;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.shekil1 .bir{
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-thumb-01.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 50px;
+p.iki{
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.shekil1 .iki{
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-thumb-02.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 50px;
+.four{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
-.shekil1 .uch{
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-thumb-03.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 50px;
-}
-.shekil{
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-video-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.four div{
     width: 300px;
-    height: 300px;
+    height: 350px;
+   
+}
+.four.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.iki{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.iki:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width:998px) {
+    .navbar ul{
+        display: none;
+    }
+
+    .menu{
+        display: inline;
+    }
 }
